@@ -33,6 +33,7 @@ function createApp(store) {
       return send(res, 200, store.list());
     }
     if (req.method === 'POST') {
+      return send(res, 500, { error: 'Server (test) fout.' })
       try {
         return send(res, 201, store.add(await readJson(req)));
       } catch {
