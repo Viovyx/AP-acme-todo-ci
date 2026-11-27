@@ -1,0 +1,20 @@
+name: Runner info
+on: push
+
+jobs:
+  info_job:
+    name: Show info about push
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hostname
+        run: hostname
+        
+      - name: Gebruiker
+        run: whoami
+        
+      - name: Besturingssysteem
+        run: uname -a
+        
+      - name: Inhoud van de werkmap
+        run: ls -la
