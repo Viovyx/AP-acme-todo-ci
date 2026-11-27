@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    name: Pull run tests
+    name: Run tests
     runs-on: ubuntu-latest
     permissions: read-all
 
